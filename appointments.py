@@ -12,7 +12,8 @@ class Appointment:
     def schedule(self):
         return f"Appointment scheduled for {self.patient_name} with Dr. {self.doctor_name} on {self.date} at {self.time}."
 
-# Sample usage
+# Sample usage of function
 if __name__ == "__main__":
     appointment1 = Appointment("John Doe", "Smith", "2024-07-15", "10:30 AM")
     print(appointment1.schedule())
+
