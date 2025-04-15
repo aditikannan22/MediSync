@@ -10,10 +10,14 @@ class Appointment:
         self.state = state
 
 
+
     def schedule(self):
-        return (f"Appointment scheduled for {self.patient_name} with Dr. {self.doctor_name} " f"on {self.date} at {self.time} in {self.city}, {self.state}.")  
+        return (f"Appointment scheduled for {self.patient_name} with Dr. {self.doctor_name} "
+                f"on {self.date} at {self.time} in {self.city}, {self.state}.")
+ 
+
 
 # Sample usage
 if __name__ == "__main__":
-    appointment1 = Appointment("John Doe", "Smith", "2024-07-15", "10:30 AM", "New York", "NY")
+    appointment1 = Appointment("John Doe", "Smith", "2024-07-15", "10:30 AM")
     print(appointment1.schedule())
